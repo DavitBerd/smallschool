@@ -1,0 +1,134 @@
+.page {
+  min-height: 100vh;
+  background: #000;
+  padding: 32px 16px;
+  margin-left: 220px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  h2 {
+    margin: 0 0 20px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .studentRow {
+    display: flex;
+    .studentEmail {
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .radioGroup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #e0e0e0;
+    font-size: 14px;
+    gap: 20px;
+  }
+  select {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #f5e6b3;
+    color: #333;
+    font-size: 14.5px;
+    min-width: 100px;
+  }
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #a0d8f1, #6bb6e0);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.student-row:last-child {
+  border-bottom: none;
+}
+
+.student-email {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #6bb6e0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

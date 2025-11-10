@@ -1,0 +1,140 @@
+.page {
+  min-height: 100vh;
+  background: #000;
+  padding: 32px 16px;
+  margin-left: 220px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #a0d8f1, #6bb6e0);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.filter {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.filter select {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: #f5e6b3;
+  color: #333;
+  font-size: 14px;
+}
+
+.card {
+  display: flex;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 14px;
+  padding: 20px 60px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 6px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: #aaa;
+}
+
+.meta a {
+  color: #6bb6e0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

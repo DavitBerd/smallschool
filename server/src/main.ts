@@ -3,17 +3,15 @@ import { NestFactory } from '@nestjs/core';
 import * as dotenv from 'dotenv';
 import { AppModule } from './app.module';
 import { UsersService } from './users/users.service';
-import * as bcrypt from 'bcrypt';
 dotenv.config();
 
 const createAdminIfNotExists = async (usersService: UsersService) => {
   const adminEmail = 'admin@example.com';
   const existingAdmin = await usersService.findByEmail(adminEmail);
   if (!existingAdmin) {
-    const hashedPassword = await bcrypt.hash('admin12345', 10);
     await usersService.create({
       email: adminEmail,
-      password: hashedPassword,
+      password: 'admin12345',
       role: 'admin',
       semesters: [0, 0, 0],
       missedLectures: 0,

@@ -8,6 +8,7 @@ import Presence from "./pages/presence/presence";
 import Profile from "./pages/profile/profile";
 import StudentsList from "./pages/studentslist/studentslist";
 import Navbar from "./components/navbar/navbar";
+import AdminAddUser from "./pages/Admin/admin";
 
 const App = () => {
   const location = useLocation();
@@ -79,7 +80,14 @@ const App = () => {
               </ProtectedRoute>
             }
           />
-
+          <Route
+            path="/adminpanel"
+            element={
+              <ProtectedRoute roles={["admin"]}>
+                <AdminAddUser />
+              </ProtectedRoute>
+            }
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

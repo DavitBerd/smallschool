@@ -1,0 +1,84 @@
+.page {
+  min-height: 100vh;
+  background: #000;
+  padding: 32px 16px;
+  margin-left: 220px;
+}
+
+.container {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  padding: 32px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.card h2 {
+  margin: 0 0 28px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card input,
+.card select {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 12px;
+  background: #f5e6b3;
+  color: #333;
+  font-size: 15px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.card input::placeholder {
+  color: #999;
+}
+
+.card input:focus,
+.card select:focus {
+  background: #fff2cc;
+}
+
+.card select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #a0d8f1, #6bb6e0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

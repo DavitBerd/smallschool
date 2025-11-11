@@ -48,6 +48,16 @@ const Navbar = () => {
             </NavLink>
           </>
         )}
+        {user && user.role === "admin" && (
+          <NavLink
+            to="/adminpanel"
+            className={({ isActive }) =>
+              isActive ? `${styles.link} ${styles.active}` : styles.link
+            }
+          >
+            Add User
+          </NavLink>
+        )}
       </nav>
       <div className={styles.footer}>
         {user ? (

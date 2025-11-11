@@ -36,12 +36,7 @@ const Register = () => {
             <select {...register("role")}>
               <option value="student">student</option>
               <option value="mentor">mentor</option>
-              <option value="admin">admin</option>
             </select>
-          </label>
-          <label>
-            Group (for students)
-            <input {...register("group")} />
           </label>
           <button type="submit" className={styles.btn}>
             Print to console
